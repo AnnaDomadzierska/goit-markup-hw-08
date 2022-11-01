@@ -476,6 +476,10 @@ figure {
 /* portfolio */
 
 .button-filters {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
   background: var(--button-filters);
   border-radius: 4px;
   border: hidden;
@@ -491,7 +495,6 @@ figure {
   gap: 8px;
   padding-bottom: 16px;
   padding-top: 12px;
-
   margin: 0;
 }
 .button-filters:hover {
