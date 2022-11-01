@@ -134,10 +134,6 @@ p {
   letter-spacing: 0.02em;
 }
 .container-contact .list {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-end;
   padding-left: 345px;
 }
 .contact-list{
@@ -153,6 +149,8 @@ p {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: var(--description-color);
+  display: flex;
+  align-items: center;
 }
 .header-contact:hover,
 .header-contact:focus {
