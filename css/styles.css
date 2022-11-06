@@ -609,5 +609,7 @@ img {
   right: 10px;
 }
 .is-hidden {
-  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
