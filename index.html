@@ -30,8 +30,8 @@
         </a>
         <nav class="navigation">
           <ul class="list">
-            <li class="logo">
-              <a href="index.html" class="current agency link">Agencja</a>
+            <li class="logo ">
+              <a href="index.html" class="current agency link nav-active">Agencja</a>
             </li>
             <li class="logo">
               <a href="portfolio.html" class="portfolio link">Portfolio</a>
@@ -67,7 +67,7 @@
           <h1 class="primary-title">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="button button-order">
+          <button type="button" class="button button-order" data-modal-open>
             Zamów usługe
           </button>
         </div>
@@ -126,28 +126,43 @@
           <h2 class="secondary-title">Czym się zajmujemy</h2>
           <ul class="list-secondary">
             <li>
+              <div class="photo-title-box">
               <img
                 src="images/computer.jpg"
                 alt="praca przy komputerze"
                 width="370"
                 height="294"
               />
+              <div class="photo-title-style">
+                <p class="photo-title">Aplikacje komputerowe</p>
+              </div>
+              </div>
             </li>
             <li>
+              <div class="photo-title-box">
               <img
                 src="images/designing.jpg"
                 alt="praca na komputerze z telefonem"
                 width="370"
                 height="294"
               />
+              <div class="photo-title-style">
+                <p class="photo-title">Aplikacje mobilne</p>
+              </div>
+              </div>
             </li>
             <li>
+              <div class="photo-title-box">
               <img
                 src="images/tablet.jpg"
                 alt="tablet z paletą kolorów"
                 width="370"
                 height="294"
               />
+              <div class="photo-title-style">
+                <p class="photo-title">Rozwiązania graficzne</p>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -385,5 +400,12 @@
         </div>
       </div>
     </footer>
+    <!-- <div class="backdrop is-hidden " data-modal>
+    <div class="modal">
+      <button class="modal-btn" data-modal-close><span>X</span></button>
+      <p>TEXT</p>
+    </div>
+  </div> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
