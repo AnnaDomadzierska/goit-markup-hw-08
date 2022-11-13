@@ -751,26 +751,41 @@ button {
   opacity: 0;
 }
 .uncheck {
-  cursor: pointer;
+
   position: absolute;
-  left: -4px;
-  top: 4px;
-  height: 16px;
-  width: 15px;
+  visibility: hidden;
 }
 .check-icon {
-  cursor: pointer;
   position: absolute;
   top: 3px;
   height: 17px;
   width: 16px;
   display: none;
 }
-.check-icon:hover,
-.check-icon:focus {
-  background-color: var(--brand-color);
-  fill: var(--white);
+
+
+
+
+
+.checkbox:checked + .checkbox-action .uncheck {
+  visibility: hidden;
 }
+.checkbox:checked + .checkbox-action .check-icon {
+  visibility: visible;
+  width: 16px;
+  height: 15px;
+  fill: var(--secondary-color);
+  background-color: var(--blue-color);
+  padding: 3px 1px 2px 2px;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
 .statute-text {
   margin-left: 24px;
 }
