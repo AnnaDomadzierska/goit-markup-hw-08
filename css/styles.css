@@ -770,6 +770,12 @@ button {
 .checkbox:checked ~ .checkbox-action .uncheck {
   visibility: hidden;
 }
+.checkbox:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: opacity .25s
+}
 .checkbox:checked ~ .checkbox-action .check-icon {
   visibility: visible;
   width: 16px;
@@ -779,7 +785,6 @@ button {
   padding: 3px 1px 2px 2px;
   border-radius: 2px;
 }
-
 
 
 
