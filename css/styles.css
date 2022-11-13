@@ -755,8 +755,8 @@ button {
   position: absolute;
   left: -4px;
   top: 4px;
-  height: 23px;
-  width: 23px;
+  height: 16px;
+  width: 15px;
 }
 .check-icon {
   cursor: pointer;
