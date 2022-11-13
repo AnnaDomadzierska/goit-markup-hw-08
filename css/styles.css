@@ -717,15 +717,6 @@ button {
 .textarea:focus {
   border-color: var(--brand-color);
 }
-.statute-section {
-  display: block;
-  position: relative;
-  margin-top: 20px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--description-color);
-}
 .statute {
   color: var(--brand-color);
 }
@@ -744,6 +735,15 @@ button {
   margin-top: 30px;
   padding: 10px 76px
 }
+.statute-section {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--description-color);
+}
 .checkbox {
   position: absolute;
   width: 16px;
@@ -751,7 +751,6 @@ button {
   opacity: 0;
 }
 .uncheck {
-
   position: absolute;
   visibility: hidden;
 }
@@ -762,12 +761,17 @@ button {
   width: 16px;
   display: none;
 }
+.statute-section:has(input:checked) .uncheck {
+  display: none;
+}
+.statute-section:has(input:checked) .check-icon {
+  display: block;
+}
 
 
 
 
-
-.checkbox:checked ~ .checkbox-action .uncheck {
+/* .checkbox:checked ~ .checkbox-action .uncheck {
   visibility: hidden;
 }
 .checkbox:after {
@@ -784,7 +788,7 @@ button {
   background-color: var(--blue-color);
   padding: 3px 1px 2px 2px;
   border-radius: 2px;
-}
+} */
 
 
 
