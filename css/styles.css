@@ -767,10 +767,10 @@ button {
 
 
 
-.checkbox:checked + .checkbox-action .uncheck {
+.checkbox:checked ~ .checkbox-action .uncheck {
   visibility: hidden;
 }
-.checkbox:checked + .checkbox-action .check-icon {
+.checkbox:checked ~ .checkbox-action .check-icon {
   visibility: visible;
   width: 16px;
   height: 15px;
