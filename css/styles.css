@@ -788,6 +788,9 @@ button {
 .statute-text {
   margin-left: 24px;
 }
+.statute {
+  color: var(--brand-color);
+}
 .modal-form-box {
   display: flex;
   flex-direction: row;
