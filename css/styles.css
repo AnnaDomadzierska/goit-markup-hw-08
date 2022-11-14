@@ -671,6 +671,7 @@ button {
 .fieldset:hover,
 .fieldset:focus {
   border-color: var(--brand-color);
+  fill: var(--brand-color);
 }
 .label {
   position: absolute;
