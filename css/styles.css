@@ -734,8 +734,14 @@ button {
   margin-top: 30px;
   padding: 10px 76px
 }
+
+/* checkbox-button */
+
 .checkbox-action:checked + .icon-uncheck {
-color: currentColor;
+  color: currentColor;
+}
+.checkbox-action:checked + .icon-check {
+  color: currentColor;
 }
 
 .statute-section {
