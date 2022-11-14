@@ -737,18 +737,21 @@ button {
 
 /* checkbox-button */
 
-.checkbox-action:checked + .icon-uncheck {
-  color: currentColor;
+.checkbox:checked + .checkbox-action .icon-uncheck {
+  visibility: hidden;
 }
-.checkbox-action:checked + .icon-check {
-  fill: var(--brand-color);
-  color: currentColor;
+.checkbox:checked + .checkbox-action .icon-check {
+  isibility: visible;
+  width: 16px;
+  height: 15px;
+  fill: var(--white);
+  background-color: var(--brand-color);
 }
 
 .statute-section {
   display: block;
   position: relative;
-  margin-top: 20px;
+  margin-top: 25px;
   cursor: pointer;
   font-size: 14px;
   line-height: 1.71;
@@ -759,6 +762,8 @@ button {
   display: none;
   width: 16px;
   height: 15px;
+  top: 3px;
+  left: 4px;
 }
 .icon-uncheck {
   position: absolute;
