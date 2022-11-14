@@ -649,6 +649,7 @@ button {
   pointer-events: none;
 }
 
+/* modal form */
 
 .form-title {
   font-weight: 700;
@@ -741,11 +742,13 @@ button {
   visibility: hidden;
 }
 .checkbox:checked + .checkbox-action .icon-check {
-  isibility: visible;
+  visibility: visible;
   width: 16px;
   height: 15px;
   fill: var(--white);
   background-color: var(--brand-color);
+  padding: 3px 1px 2px 2px;
+  border-radius: 2px;
 }
 
 .statute-section {
@@ -783,4 +786,46 @@ button {
 }
 .statute-text {
   margin-left: 24px;
+}
+
+/* newsletter */
+.newsletter { 
+  display: flex;
+  flex-direction: row;
+}
+.newsletter-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: left;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.newsletter-mail {
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(117, 117, 117, 0.3);
+  border-radius: 4px;
+  padding: 16px 15px;
+  background-color: transparent;
+}
+.newsletter-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border: 0px;
+  min-width: 200px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  padding: 10px 76px 10px 42px;
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  color: currentColor;
 }
