@@ -741,6 +741,7 @@ button {
   color: currentColor;
 }
 .checkbox-action:checked + .icon-check {
+  fill: var(--brand-color);
   color: currentColor;
 }
 
