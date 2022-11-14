@@ -788,6 +788,10 @@ button {
 .statute-text {
   margin-left: 24px;
 }
+.modal-form-box:hover,
+.modal-form-box:focus {
+  color: var(--brand-color);
+}
 
 /* newsletter */
 .newsletter { 
