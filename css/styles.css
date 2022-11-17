@@ -642,6 +642,9 @@ button {
   border: 1px solid var(--grey-10);
   top: 8px;
   right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .is-hidden {
   opacity: 0;
@@ -655,8 +658,7 @@ button {
   font-weight: 700;
   font-size: 20px;
   line-height: 0.9;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .fieldset {
   display: flex;
@@ -684,10 +686,9 @@ button {
 .input {
   border: 0;
   outline: 0;
+  width: 100%;
 }
 .icon {
-  height: 20px;
-  width: 20px;
   margin: 11px 12px;
   color: currentColor;
 }
@@ -717,6 +718,7 @@ button {
 .textarea:hover,
 .textarea:focus {
   border-color: var(--brand-color);
+  outline: transparent;
 }
 .statute {
   color: var(--brand-color);
@@ -755,7 +757,7 @@ button {
 .statute-section {
   display: block;
   position: relative;
-  margin-top: 25px;
+  margin-top: 20px;
   cursor: pointer;
   font-size: 14px;
   line-height: 1.71;
