@@ -1,0 +1,32 @@
+.container {
+  .work__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    max-width: 1170px;
+  }
+}
+
+.work__list--photo {
+  position: relative;
+}
+
+.work__list--title {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--background-photo-title);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

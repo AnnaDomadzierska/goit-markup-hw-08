@@ -1,0 +1,23 @@
+.baner {
+  background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/team.jpg);
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-for-title);
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.baner--title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+  width: 696px;
+  margin: 0 auto;
+}

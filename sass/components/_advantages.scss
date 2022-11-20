@@ -1,0 +1,29 @@
+.advantages {
+  padding-top: 94px;
+
+  .list {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.advantages__box {
+  background: var(--box-strengths);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+}
+.advantages__box--tittle {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.advantages__box--description {
+  line-height: 1.71;
+  color: var(--description-color);
+}
