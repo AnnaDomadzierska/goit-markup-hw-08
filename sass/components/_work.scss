@@ -1,15 +1,17 @@
-.container {
-  .work__list {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-    max-width: 1170px;
-  }
+.work {
+  padding: 94px 0;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 1170px;
 }
 
 .work__list--photo {

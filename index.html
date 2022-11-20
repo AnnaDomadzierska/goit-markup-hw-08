@@ -122,7 +122,7 @@
         </div>
       </section>
 
-      <section class="section work">
+      <section class="work">
         <div class="container">
           <h2 class="title">Czym się zajmujemy</h2>
           <ul class="work__list">
@@ -163,7 +163,7 @@
         </div>
       </section>
 
-      <section class="team section">
+      <section class="team">
         <div class="container">
           <h2 class="title">Nasz zespół</h2>
           <ul class="team__list list">
@@ -177,7 +177,7 @@
               <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Product Designer</p>
-                <ul class="social-links list">
+                <ul class="social-links">
                   <li class="social-links__item">
                     <svg width="20px" height="20px">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -211,7 +211,7 @@
               <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Frontend Developer</p>
-                <ul class="social-links list">
+                <ul class="social-links">
                   <li class="social-links__item">
                     <svg width="20px" height="20px">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -242,10 +242,10 @@
                 width="270"
                 height="260"
               />
-              <div class="social-links-section">
+              <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Marketing</p>
-                <ul class="social-links list">
+                <ul class="social-links">
                   <li class="social-links__item">
                     <svg width="20px" height="20px">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -276,10 +276,10 @@
                 width="270"
                 height="260"
               />
-              <div class="social-links-section">
+              <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Designer</p>
-                <ul class="social-links list">
+                <ul class="social-links">
                   <li class="social-links__item">
                     <svg width="20px" height="20px">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -307,36 +307,36 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="clients">
         <div class="container">
-          <h2 class="secondary-title">Nasi klienci</h2>
-          <ul class="client-list list">
-            <li class="client-section">
+          <h2 class="title">Nasi klienci</h2>
+          <ul class="clients__list list">
+            <li class="client__list--logo">
               <svg height="60px" width="106px">
                 <use href="./images/icons.svg#icon-logoone"></use>
               </svg>
             </li>
-            <li class="client-section">
+            <li class="client__list--logo">
               <svg height="60px" width="106px">
                 <use href="./images/icons.svg#icon-logotwo"></use>
               </svg>
             </li>
-            <li class="client-section">
+            <li class="client__list--logo">
               <svg height="60px" width="106px">
                 <use href="./images/icons.svg#icon-logothree"></use>
               </svg>
             </li>
-            <li class="client-section">
+            <li class="client__list--logo">
               <svg height="60px" width="106px">
                 <use href="./images/icons.svg#icon-logofour"></use>
               </svg>
             </li>
-            <li class="client-section">
+            <li class="client__list--logo">
               <svg height="60px" width="106px">
                 <use href="./images/icons.svg#icon-logofive"></use>
               </svg>
             </li>
-            <li class="client-section">
+            <li class="client__list--logo">
               <svg height="60px" width="106px">
                 <use href="./images/icons.svg#icon-logosix"></use>
               </svg>
@@ -413,58 +413,59 @@
 
     <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
+      <p class="modal--title">Zostaw swoje dane w formularzu poniżej</p>
       <form name="WebStudio-form" autocomplete="off">
-        <fieldset class="fieldset">
-          <label class="label">Imię</label>
+        <fieldset class="modal__fieldset">
+          <label class="modal__fieldset--label">Imię</label>
           
-          <svg class="icon" width="18" height="18" >
+          <svg class="modal__fieldset--icon" width="18" height="18" >
             <use href="./images/icons.svg#icon-profile" ></use>
           </svg>
-          <input class="input" type="text" name="username">
+          <input class="modal__fieldset--input" type="text" name="username">
           
         </fieldset>
 
-        <fieldset class="fieldset">
-          <label class="label">Telefon</label>
-          <svg class="icon" width="18" height="18" >
+        <fieldset class="modal__fieldset">
+          <label class="modal__fieldset--label">Telefon</label>
+          <svg class="modal__fieldset--icon" width="18" height="18" >
             <use href="./images/icons.svg#icon-phone" ></use>
           </svg>
-          <input class="input" type="tel" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+          <input class="modal__fieldset--input" type="tel" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
         </fieldset>
 
-        <fieldset class="fieldset">
-          <label class="label">Email</label>
-          <svg class="icon" width="18" height="18" >
+        <fieldset class="modal__fieldset">
+          <label class="modal__fieldset--label">Email</label>
+          <svg class="modal__fieldset--icon" width="18" height="18" >
             <use href="./images/icons.svg#icon-envelopeform" ></use>
           </svg>
-          <input class="input" type="email" name="email">
+          <input class="modal__fieldset--input" type="email" name="email">
         </fieldset>
 
-        <fieldset class="fieldset">
-          <label class="label">Komentarz</label>
-          <textarea class="textarea" name="user-comment" placeholder="Wprowadź tekst"></textarea>
+        <fieldset class="modal__fieldset">
+          <label class="modal__fieldset--label">Komentarz</label>
+          <textarea class="modal__fieldset--textarea" name="user-comment" placeholder="Wprowadź tekst"></textarea>
         </fieldset>
-        
-        <label class="statute-section">
-  <input class="checkbox" type="checkbox" name="statute-approval" checked />
-          <span class="checkbox-action">
-            <svg class="icon-uncheck">
-              <use href="./images/icons.svg#icon-uncheck"></use>
-            </svg>
-            <svg class="icon-check">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-            <span class="statute-text">
-      Oświadczam iż akceptuję
-      <a class="statute" href="#">Regulamin</a>
-      i
-      <a class="statute" href="#">Politykę Prywatności.</a>
-    </span>
-  </span>
-</label>
-        <button type="submit" class="form-submit-button">Wyślij</button>
       </form>
+      <div class="modal__statute">
+        <label>
+          <input class="checkbox" type="checkbox" name="statute-approval" checked />
+            <span class="checkbox--action">
+              <svg class="icon-uncheck">
+                <use href="./images/icons.svg#icon-uncheck"></use>
+              </svg>
+              <svg class="icon-check">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            <span class="modal__statute--label">
+              Oświadczam iż akceptuję
+            <a class="modal__statute--links" href="#">Regulamin</a>
+              i
+            <a class="modal__statute--links" href="#">Politykę Prywatności.</a>
+              </span>
+            </span>
+        </label>
+      </div>
+        <button type="submit" class="brand-button modal__button">Wyślij</button>
       <button type="button" class="modal-btn" data-modal-close>
         <svg width="12" height="12">
           <use href="./images/icons.svg#icon-close-button"></use>
