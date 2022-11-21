@@ -1,0 +1,107 @@
+.footer {
+  background: var(--background-for-title);
+  padding: 60px 0;
+}
+.footer__section {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+.footer__address {
+  font-style: initial;
+}
+.footer__logo {
+  margin-left: 0px;
+  padding-bottom: 20px;
+}
+.footer__info {
+  .list {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+.footer__info--street {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  padding-bottom: 9px;
+}
+.footer__info--contact {
+  padding-bottom: 9px;
+}
+
+/// SOCIAL MEDIA SECTION ///
+
+.footer__social-media--title {
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.social-links__item--list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 10px;
+  margin: 0;
+}
+.social-links__item--footer {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+    fill: var(--description-color);
+    fill: var(--white);
+  }
+}
+
+/// NEWSLETTER SECTION ///
+
+.footer__newsletter--box {
+  display: flex;
+  flex-direction: row;
+}
+.footer__newsletter--title {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: left;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.footer__newsletter--mail {
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(117, 117, 117, 0.3);
+  border-radius: 4px;
+  padding: 16px 15px;
+  background-color: transparent;
+}
+
+.brand-button {
+  .footer__newsletter--button {
+    padding: 10px 76px 10px 42px;
+    margin: 0 0 0 12px;
+    min-width: 200px;
+  }
+}
+.footer__newsletter--icon-send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  color: currentColor;
+  margin-left: 24px;
+}

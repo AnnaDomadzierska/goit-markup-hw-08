@@ -44,7 +44,7 @@
         </nav>
         <ul class="header__contact list">
           <li>
-            <a href="mailto:info@devstudio.com" class="header__contact--item">
+            <a href="mailto:info@devstudio.com" class="contact--item">
               <svg class="header__contact--icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -52,7 +52,7 @@
             >
           </li>
           <li>
-            <a href="tel:+48111111111" class="header__contact--item">
+            <a href="tel:+48111111111" class="contact--item">
               <svg class="header__contact--icon" width="12px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -346,47 +346,49 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-section">
-        <address class="address">
-          <div class="logo-footer">
+      <div class="container footer__section">
+        <address class="footer__address">
+          <div class="footer__logo">
             <a href="index.html" class="link logo">
-              <span class="logo-blue">Web</span>
-              <span class="logo-white">Studio</span>
+              <span class="logo__blue">Web</span>
+              <span class="logo__white">Studio</span>
             </a>
           </div>
-          <div class="info-footer">
+          
+          <div class="footer__info">
             <ul class="list">
-              <li class="street">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="footer-contact">
-                <a href="mailto:info@example.com" class="mail link"
+              <li class="footer__info--street">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__info--contact">
+                <a href="mailto:info@example.com" class="contact--item link"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-contact">
-                <a href="tel:+48111111111" class="tel link">+48 111 111 111</a>
+              <li class="footer__info--contact">
+                <a href="tel:+48111111111" class="contact--item link">+48 111 111 111</a>
               </li>
             </ul>
           </div>
         </address>
-        <div class="social-media">
-          <p class="join-us">DOŁĄCZ DO NAS</p>
-          <ul class="social-links-footer">
-            <li class="social-links__item-footer">
+
+        <div class="footer__social-media">
+          <p class="footer__social-media--title">DOŁĄCZ DO NAS</p>
+          <ul class="social-links__item--list">
+            <li class="social-links__item--footer">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </li>
-            <li class="social-links__item-footer">
+            <li class="social-links__item--footer">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </li>
-            <li class="social-links__item-footer">
+            <li class="social-links__item--footer">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </li>
-            <li class="social-links__item-footer">
+            <li class="social-links__item--footer">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
@@ -394,15 +396,15 @@
           </ul>
         </div>
 
-        <form class="newsletter-box">
-          <p class="newsletter-title">Zapisz się do newslettera</p>
-          <div class="newsletter">
+        <form class="footer__newsletter">
+          <p class="footer__newsletter--title">Zapisz się do newslettera</p>
+          <div class="footer__newsletter--box">
             <label>
-              <input class="newsletter-mail" name="e-mail" placeholder="E-mail">
+              <input class="footer__newsletter--mail" name="e-mail" placeholder="E-mail">
             </label>
           
-          <button type="submit" class="newsletter-button">Zapisz się
-            <svg class="icon-send">
+          <button type="submit" class="brand-button footer__newsletter--button">Zapisz się
+            <svg class="footer__newsletter--icon-send">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
@@ -465,12 +467,14 @@
             </span>
         </label>
       </div>
+
         <button type="submit" class="brand-button">Wyślij</button>
-      <button type="button" class="modal__button--close" data-modal-close>
+        
+        <button type="button" class="modal__button--close" data-modal-close>
         <svg width="12" height="12">
           <use href="./images/icons.svg#icon-close-button"></use>
         </svg>
-      </button>
+        </button>
     </div>
   </div>
 
