@@ -88,6 +88,14 @@ button {
   color: var(--title-color);
   margin-bottom: 50px;
 }
+.portfolio--title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  margin-bottom: 4px;
+}
 
 .contact--item {
   color: inherit;
@@ -106,3 +114,7 @@ button {
     color: var(--brand-color);
   }
 }
+
+
+/// PORTFOLIO ///
+
