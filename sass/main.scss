@@ -1,4 +1,6 @@
 @import "./utils/variables.scss";
+@import "./utlis/backdrop";
+@import "./utlis/is-hidden";
 
 @import "./components/header.scss";
 @import "./components/baner.scss";
@@ -11,6 +13,4 @@
 @import "./components/logo.scss";
 @import "./components/brand-button.scss";
 @import "./components/social-links";
-@import "./components/backdrop";
-@import "./components/is-hidden";
 @import "./components/checkbox";

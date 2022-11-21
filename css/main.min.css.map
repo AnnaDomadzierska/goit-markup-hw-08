@@ -12,8 +12,8 @@
     "../sass/components/_logo.scss",
     "../sass/components/_brand-button.scss",
     "../sass/components/_social-links.scss",
-    "../sass/components/_backdrop.scss",
-    "../sass/components/_is-hidden.scss",
+    "../sass/utlis/_backdrop.scss",
+    "../sass/utlis/_is-hidden.scss",
     "../sass/components/_checkbox.scss"
   ],
   "names": [],

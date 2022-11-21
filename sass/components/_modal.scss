@@ -81,34 +81,7 @@
 .modal__statute--links {
   color: var(--brand-color);
 }
-
-
-.brand-button {
-  .modal__button {
-    margin: auto;
-  }
-}
-
-.modal-form-box {
-  display: flex;
-  flex-direction: row;
-}
-.form-submit-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  border: 0px;
-  min-width: 200px;
-  letter-spacing: 0.06em;
-  color: var(--white);
-  background: var(--brand-color);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  border-radius: 4px;
-  margin: auto;
-  margin-top: 30px;
-  padding: 10px 76px;
-}
-.modal-btn {
+.modal__button--close {
   position: absolute;
   cursor: pointer;
   width: 30px;
