@@ -12,7 +12,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,13 +30,21 @@
         <nav class="header__navigation">
           <ul class="list">
             <li class="logo">
-              <a href="index.html" class="header__navigation--agency link">Agencja</a>
+              <a href="index.html" class="header__navigation--agency link"
+                >Agencja</a
+              >
             </li>
             <li class="logo">
-              <a href="portfolio.html" class="header__navigation--portfolio current link nav-active">Portfolio</a>
+              <a
+                href="portfolio.html"
+                class="header__navigation--portfolio current link nav-active"
+                >Portfolio</a
+              >
             </li>
             <li class="logo">
-              <a href="Kontakt" class="header__navigation--contact link">Kontakt</a>
+              <a href="Kontakt" class="header__navigation--contact link"
+                >Kontakt</a
+              >
             </li>
           </ul>
         </nav>
@@ -64,7 +71,6 @@
     <main>
       <section class="section portfolio">
         <div class="container">
-
           <ul class="list portfolio__button--list">
             <li>
               <button type="button" class="button portfolio__button--filters">
@@ -94,7 +100,6 @@
           </ul>
 
           <ul class="list portfolio__item">
-
             <li>
               <a href="#" class="portfolio__item--link link">
                 <div class="portfolio__box">
@@ -114,8 +119,8 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Technocrack</h2>
-                  <p class="description-two">Strona internetowa</p>
+                  <h2 class="portfolio__box--title">Technocrack</h2>
+                  <p class="portfolio__box--category">Strona internetowa</p>
                 </div>
               </a>
             </li>
@@ -138,10 +143,10 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">
+                  <h2 class="portfolio__box--title">
                     Grafika New Orlean vs Golden Star
                   </h2>
-                  <p class="description-two">Dizajn</p>
+                  <p class="portfolio__box--category">Dizajn</p>
                 </div>
               </a>
             </li>
@@ -164,8 +169,8 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Restauracja Seafood</h2>
-                  <p class="description-two">Aplikacja</p>
+                  <h2 class="portfolio__box--title">Restauracja Seafood</h2>
+                  <p class="portfolio__box--category">Aplikacja</p>
                 </div>
               </a>
             </li>
@@ -188,8 +193,8 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Projekt Prime</h2>
-                  <p class="description-two">Marketing</p>
+                  <h2 class="portfolio__box--title">Projekt Prime</h2>
+                  <p class="portfolio__box--category">Marketing</p>
                 </div>
               </a>
             </li>
@@ -212,8 +217,8 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Projekt Boxes</h2>
-                  <p class="description-two">Aplikacja</p>
+                  <h2 class="portfolio__box--title">Projekt Boxes</h2>
+                  <p class="portfolio__box--category">Aplikacja</p>
                 </div>
               </a>
             </li>
@@ -236,8 +241,10 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Inspiration has no Borders</h2>
-                  <p class="description-two">Strona internetowa</p>
+                  <h2 class="portfolio__box--title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio__box--category">Strona internetowa</p>
                 </div>
               </a>
             </li>
@@ -260,8 +267,8 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Magazyn Limited Edition</h2>
-                  <p class="description-two">Dizajn</p>
+                  <h2 class="portfolio__box--title">Magazyn Limited Edition</h2>
+                  <p class="portfolio__box--category">Dizajn</p>
                 </div>
               </a>
             </li>
@@ -284,8 +291,8 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Projekt LAB</h2>
-                  <p class="description-two">Marketing</p>
+                  <h2 class="portfolio__box--title">Projekt LAB</h2>
+                  <p class="portfolio__box--category">Marketing</p>
                 </div>
               </a>
             </li>
@@ -308,8 +315,8 @@
                   </div>
                 </div>
                 <div class="portfolio__box--border">
-                  <h2 class="portfolio--title">Growing Business</h2>
-                  <p class="description-two">Aplikacja</p>
+                  <h2 class="portfolio__box--title">Growing Business</h2>
+                  <p class="portfolio__box--category">Aplikacja</p>
                 </div>
               </a>
             </li>
@@ -326,17 +333,21 @@
               <span class="logo__white">Studio</span>
             </a>
           </div>
-          
+
           <div class="footer__info">
             <ul class="list">
-              <li class="footer__info--street">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__info--street">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
               <li class="footer__info--contact">
                 <a href="mailto:info@example.com" class="contact--item link"
                   >info@example.com</a
                 >
               </li>
               <li class="footer__info--contact">
-                <a href="tel:+48111111111" class="contact--item link">+48 111 111 111</a>
+                <a href="tel:+48111111111" class="contact--item link"
+                  >+48 111 111 111</a
+                >
               </li>
             </ul>
           </div>
@@ -372,14 +383,22 @@
           <p class="footer__newsletter--title">Zapisz się do newslettera</p>
           <div class="footer__newsletter--box">
             <label>
-              <input class="footer__newsletter--mail" name="e-mail" placeholder="E-mail">
+              <input
+                class="footer__newsletter--mail"
+                name="e-mail"
+                placeholder="E-mail"
+              />
             </label>
-          
-          <button type="submit" class="brand-button footer__newsletter--button">Zapisz się
-            <svg class="footer__newsletter--icon-send">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+
+            <button
+              type="submit"
+              class="brand-button footer__newsletter--button"
+            >
+              Zapisz się
+              <svg class="footer__newsletter--icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
