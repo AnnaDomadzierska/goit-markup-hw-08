@@ -49,14 +49,35 @@ button {
   border: none;
   border-radius: 4px;
 }
+
 .container {
-  margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
+
 .section {
-  padding: 94px 0;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .link {
   text-decoration: none;
   color: inherit;
