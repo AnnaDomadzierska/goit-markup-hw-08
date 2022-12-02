@@ -1,11 +1,11 @@
 .advantages {
-  padding-top: 94px;
+  padding-top: 60px;
 
   .list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
   }
-  
 }
 
 .advantages__box {
@@ -13,8 +13,11 @@
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .advantages__box--title {
   font-weight: 700;
