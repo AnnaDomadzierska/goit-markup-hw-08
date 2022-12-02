@@ -1,6 +1,5 @@
 .clients {
   padding: 60px 0;
-  // padding: 94px 0; (for desctop)
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +10,17 @@
     gap: 30px;
   }
 }
+// @media screen and (min-width: 768px){}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+    &__list {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+}
+
 .client__list--logo {
   color: var(--client-background);
   border: 1px solid currentColor;
