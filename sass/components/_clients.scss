@@ -1,20 +1,21 @@
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
+  // padding: 94px 0; (for desctop)
   &__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
+    gap: 30px;
   }
 }
 .client__list--logo {
   color: var(--client-background);
   border: 1px solid currentColor;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   justify-content: center;

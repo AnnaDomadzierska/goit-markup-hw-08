@@ -4,20 +4,22 @@
 }
 .footer__section {
   display: flex;
-  align-items: baseline;
-  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-direction: column;
 }
 .footer__address {
   font-style: initial;
 }
 .footer__logo {
-  margin-left: 0px;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 .footer__info {
   .list {
-    margin-left: 0;
-    padding: 0;
+    text-align: center;
   }
 }
 .footer__info--street {
@@ -26,9 +28,13 @@
   letter-spacing: 0.03em;
   color: var(--white);
   padding-bottom: 9px;
+  display: flex;
+  justify-content: center;
 }
 .footer__info--contact {
   padding-bottom: 9px;
+  display: flex;
+  justify-content: center;
 }
 
 /// SOCIAL MEDIA SECTION ///
@@ -38,6 +44,8 @@
   line-height: 1.17;
   color: var(--white);
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 .social-links__item--list {
   text-decoration: none;
@@ -71,7 +79,7 @@
 
 .footer__newsletter--box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .footer__newsletter--title {
   text-transform: uppercase;
@@ -80,6 +88,8 @@
   text-align: left;
   color: var(--white);
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 .footer__newsletter--mail {
   width: 358px;
@@ -89,12 +99,13 @@
   border-radius: 4px;
   padding: 16px 15px;
   background-color: transparent;
+  margin-bottom: 20px;
 }
 
 .brand-button {
   &.footer__newsletter--button {
     padding: 10px 76px 10px 42px;
-    margin: 0 0 0 12px;
+    margin: auto;
     min-width: 200px;
   }
 }

@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/> 
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -121,7 +121,7 @@
         </div>
       </section>
 
-       <!-- <section class="work">
+      <!-- <section class="work">
         <div class="container">
           <h2 class="title">Czym się zajmujemy</h2>
           <ul class="work__list">
@@ -306,7 +306,7 @@
         </div>
       </section>
 
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="title">Nasi klienci</h2>
           <ul class="clients__list list">
@@ -342,9 +342,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__section">
         <address class="footer__address">
           <div class="footer__logo">
@@ -353,17 +353,21 @@
               <span class="logo__white">Studio</span>
             </a>
           </div>
-          
+
           <div class="footer__info">
             <ul class="list">
-              <li class="footer__info--street">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__info--street">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
               <li class="footer__info--contact">
                 <a href="mailto:info@example.com" class="contact--item link"
                   >info@example.com</a
                 >
               </li>
               <li class="footer__info--contact">
-                <a href="tel:+48111111111" class="contact--item link">+48 111 111 111</a>
+                <a href="tel:+48111111111" class="contact--item link"
+                  >+48 111 111 111</a
+                >
               </li>
             </ul>
           </div>
@@ -399,57 +403,78 @@
           <p class="footer__newsletter--title">Zapisz się do newslettera</p>
           <div class="footer__newsletter--box">
             <label>
-              <input class="footer__newsletter--mail" name="e-mail" placeholder="E-mail">
+              <input
+                class="footer__newsletter--mail"
+                name="e-mail"
+                placeholder="E-mail"
+              />
             </label>
-          
-          <button type="submit" class="brand-button footer__newsletter--button">Zapisz się
-            <svg class="footer__newsletter--icon-send">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+
+            <button
+              type="submit"
+              class="brand-button footer__newsletter--button"
+            >
+              Zapisz się
+              <svg class="footer__newsletter--icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <p class="modal--title">Zostaw swoje dane w formularzu poniżej</p>
-      <form name="WebStudio-form" autocomplete="off">
-        <fieldset class="modal__fieldset">
-          <label class="modal__fieldset--label">Imię</label>
-          
-          <svg class="modal__fieldset--icon" width="18" height="18" >
-            <use href="./images/icons.svg#icon-profile" ></use>
-          </svg>
-          <input class="modal__fieldset--input" type="text" name="username">
-          
-        </fieldset>
+      <div class="modal">
+        <p class="modal--title">Zostaw swoje dane w formularzu poniżej</p>
+        <form name="WebStudio-form" autocomplete="off">
+          <fieldset class="modal__fieldset">
+            <label class="modal__fieldset--label">Imię</label>
 
-        <fieldset class="modal__fieldset">
-          <label class="modal__fieldset--label">Telefon</label>
-          <svg class="modal__fieldset--icon" width="18" height="18" >
-            <use href="./images/icons.svg#icon-phone" ></use>
-          </svg>
-          <input class="modal__fieldset--input" type="tel" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
-        </fieldset>
+            <svg class="modal__fieldset--icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-profile"></use>
+            </svg>
+            <input class="modal__fieldset--input" type="text" name="username" />
+          </fieldset>
 
-        <fieldset class="modal__fieldset">
-          <label class="modal__fieldset--label">Email</label>
-          <svg class="modal__fieldset--icon" width="18" height="18" >
-            <use href="./images/icons.svg#icon-envelopeform" ></use>
-          </svg>
-          <input class="modal__fieldset--input" type="email" name="email">
-        </fieldset>
+          <fieldset class="modal__fieldset">
+            <label class="modal__fieldset--label">Telefon</label>
+            <svg class="modal__fieldset--icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input
+              class="modal__fieldset--input"
+              type="tel"
+              id="phone_number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            />
+          </fieldset>
 
-        <fieldset class="modal__fieldset">
-          <label class="modal__fieldset--label">Komentarz</label>
-          <textarea class="modal__fieldset--textarea" name="user-comment" placeholder="Wprowadź tekst"></textarea>
-        </fieldset>
-      </form>
-      <div class="modal__statute">
-        <label>
-          <input class="checkbox" type="checkbox" name="statute-approval" checked />
+          <fieldset class="modal__fieldset">
+            <label class="modal__fieldset--label">Email</label>
+            <svg class="modal__fieldset--icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-envelopeform"></use>
+            </svg>
+            <input class="modal__fieldset--input" type="email" name="email" />
+          </fieldset>
+
+          <fieldset class="modal__fieldset">
+            <label class="modal__fieldset--label">Komentarz</label>
+            <textarea
+              class="modal__fieldset--textarea"
+              name="user-comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </fieldset>
+        </form>
+        <div class="modal__statute">
+          <label>
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="statute-approval"
+              checked
+            />
             <span class="checkbox--action">
               <svg class="icon-uncheck">
                 <use href="./images/icons.svg#icon-uncheck"></use>
@@ -457,26 +482,29 @@
               <svg class="icon-check">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-            <span class="modal__statute--label">
-              Oświadczam iż akceptuję
-            <a class="modal__statute--links" href="#">Regulamin</a>
-              i
-            <a class="modal__statute--links" href="#">Politykę Prywatności.</a>
+              <span class="modal__statute--label">
+                Oświadczam iż akceptuję
+                <a class="modal__statute--links" href="#">Regulamin</a>
+                i
+                <a class="modal__statute--links" href="#"
+                  >Politykę Prywatności.</a
+                >
               </span>
             </span>
-        </label>
-      </div>
+          </label>
+        </div>
 
         <button type="submit" class="brand-button">Wyślij</button>
-        
-        <button type="button" class="modal__button--close" data-modal-close>
-        <svg width="12" height="12">
-          <use href="./images/icons.svg#icon-close-button"></use>
-        </svg>
-        </button>
-    </div>
-  </div>
 
-    <script src="./js/modal.js"></script> -->
+        <button type="button" class="modal__button--close" data-modal-close>
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    -->
   </body>
 </html>
