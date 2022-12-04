@@ -31,7 +31,7 @@
       <div class="mobile-menu__elements">
         <ul class="mobile-menu__nav list">
           <li>
-            <a class="link" href="./index.html">Agencja</a>
+            <a class="link current" href="./index.html">Agencja</a>
           </li>
           <li>
             <a class="link" href="./portfolio.html">Portfolio</a>
@@ -83,7 +83,7 @@
         <ul class="header__contact list">
           <li>
             <a href="mailto:info@devstudio.com" class="contact--item">
-              <svg class="header__contact--icon" width="16px" height="12px">
+              <svg class="header__contact--icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -91,7 +91,7 @@
           </li>
           <li>
             <a href="tel:+48111111111" class="contact--item">
-              <svg class="header__contact--icon" width="12px" height="16px">
+              <svg class="header__contact--icon" width="12" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -117,9 +117,11 @@
           <h2 class="visually-hidden">Nasze atuty</h2>
           <ul class="list">
             <li>
-              <svg class="advantages__box" height="70px" width="70px">
+              <div class="advantages__box">
+              <svg height="70" width="70">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
+              </div>
               <h4 class="advantages__box--title">LOREM IPSUM</h4>
               <p class="advantages__box--description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -127,9 +129,11 @@
               </p>
             </li>
             <li>
-              <svg class="advantages__box" height="70px" width="70px">
+              <div class="advantages__box">
+              <svg height="70" width="70">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
+              </div>
               <h4 class="advantages__box--title">LOREM IPSUM</h4>
               <p class="advantages__box--description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -137,9 +141,11 @@
               </p>
             </li>
             <li>
-              <svg class="advantages__box" height="70px" width="70px">
+              <div class="advantages__box">
+              <svg height="70" width="70">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
+              </div>
               <h4 class="advantages__box--title">LOREM IPSUM</h4>
               <p class="advantages__box--description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -147,9 +153,11 @@
               </p>
             </li>
             <li>
-              <svg class="advantages__box" height="70px" width="70px">
+              <div class="advantages__box">
+              <svg height="70" width="70">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
+              </div>
               <h4 class="advantages__box--title">LOREM IPSUM</h4>
               <p class="advantages__box--description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -206,33 +214,38 @@
           <h2 class="title">Nasz zespół</h2>
           <ul class="team__list list">
             <li class="team__list--box">
-              <img
-                src="images/designer.jpg"
-                alt="uśmiechnięty mężczyzna w bordowej koszuli z brodą i w okularami"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source srcset="images/designer.jpg 1x, images/designer.jpg@2x 2x" media="min-width: 1200px"/>
+                <source srcset="images/designer.jpg 1x, images/designer.jpg@2x 2x" media="min-width: 768px"/>
+                <source srcset="images/designer.jpg 1x, images/designer.jpg@2x 2x" media="min-width: 480px"/>
+                <img
+                  src="images/designer.jpg"
+                  alt="uśmiechnięty mężczyzna w bordowej koszuli z brodą i w okularami"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Product Designer</p>
                 <ul class="social-links">
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </li>
@@ -240,33 +253,38 @@
               </div>
             </li>
             <li class="team__list--box">
+              <picture>
+                <source srcset="images/frontend.jpg 1x, images/frontend.jpg@2x 2x" media="min-width: 1200px"/>
+                <source srcset="images/frontend.jpg 1x, images/frontend.jpg@2x 2x" media="min-width: 768px"/>
+                <source srcset="images/frontend.jpg 1x, images/frontend.jpg@2x 2x" media="min-width: 480px"/>
               <img
                 src="images/frontend.jpg"
                 alt="uśmiechnięta kobieta w czarnej marynarce i okularach"
                 width="450"
                 height="460"
               />
+              </picture>
               <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Frontend Developer</p>
                 <ul class="social-links">
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </li>
@@ -274,33 +292,38 @@
               </div>
             </li>
             <li class="team__list--box">
-              <img
-                src="images/marketing.jpg"
-                alt="uśmiechnięty mężczyzna w niebieskiej koszuli"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source srcset="images/marketing.jpg 1x, images/marketing.jpg@2x 2x" media="min-width: 1200px"/>
+                <source srcset="images/marketing.jpg 1x, images/marketing.jpg@2x 2x" media="min-width: 768px"/>
+                <source srcset="images/marketing.jpg 1x, images/marketing.jpg@2x 2x" media="min-width: 480px"/>
+                <img
+                  src="images/marketing.jpg"
+                  alt="uśmiechnięty mężczyzna w niebieskiej koszuli"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Marketing</p>
                 <ul class="social-links">
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </li>
@@ -308,33 +331,38 @@
               </div>
             </li>
             <li class="team__list--box">
-              <img
-                src="images/uidesigner.jpg"
-                alt="uśmiechnięty mężczyzna w czarnym t-shirtcie z brodą i w okularach "
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source srcset="images/uidesigner.jpg 1x, images/uidesigner.jpg@2x 2x" media="min-width: 1200px"/>
+                <source srcset="images/uidesigner.jpg 1x, images/uidesigner.jpg@2x 2x" media="min-width: 768px"/>
+                <source srcset="images/uidesigner.jpg 1x, images/uidesigner.jpg@2x 2x" media="min-width: 480px"/>
+                <img
+                  src="images/uidesigner.jpg"
+                  alt="uśmiechnięty mężczyzna w czarnym t-shirtcie z brodą i w okularach "
+                  width="450"
+                  height="460"
+                />
+                </picture>
               <div class="team__list__bio">
                 <h3 class="team__list__bio--name">John Doe</h3>
                 <p class="team__list__bio--job-title">Designer</p>
                 <ul class="social-links">
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </li>
                   <li class="social-links__item">
-                    <svg width="20px" height="20px">
+                    <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </li>
@@ -350,32 +378,32 @@
           <h2 class="title">Nasi klienci</h2>
           <ul class="clients__list list">
             <li class="client__list--logo">
-              <svg height="60px" width="106px">
+              <svg height="60" width="106">
                 <use href="./images/icons.svg#icon-logoone"></use>
               </svg>
             </li>
             <li class="client__list--logo">
-              <svg height="60px" width="106px">
+              <svg height="60" width="106">
                 <use href="./images/icons.svg#icon-logotwo"></use>
               </svg>
             </li>
             <li class="client__list--logo">
-              <svg height="60px" width="106px">
+              <svg height="60" width="106">
                 <use href="./images/icons.svg#icon-logothree"></use>
               </svg>
             </li>
             <li class="client__list--logo">
-              <svg height="60px" width="106px">
+              <svg height="60" width="106">
                 <use href="./images/icons.svg#icon-logofour"></use>
               </svg>
             </li>
             <li class="client__list--logo">
-              <svg height="60px" width="106px">
+              <svg height="60" width="106">
                 <use href="./images/icons.svg#icon-logofive"></use>
               </svg>
             </li>
             <li class="client__list--logo">
-              <svg height="60px" width="106px">
+              <svg height="60" width="106">
                 <use href="./images/icons.svg#icon-logosix"></use>
               </svg>
             </li>
@@ -416,22 +444,22 @@
           <p class="footer__social-media--title">DOŁĄCZ DO NAS</p>
           <ul class="social-links__item--list">
             <li class="social-links__item--footer">
-              <svg width="20px" height="20px">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </li>
             <li class="social-links__item--footer">
-              <svg width="20px" height="20px">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </li>
             <li class="social-links__item--footer">
-              <svg width="20px" height="20px">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </li>
             <li class="social-links__item--footer">
-              <svg width="20px" height="20px">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </li>
